@@ -60,10 +60,12 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.nwDataSet11 = new LinqLabs.NWDataSet1();
+            this.productsTableAdapter1 = new LinqLabs.NWDataSet1TableAdapters.ProductsTableAdapter();
             this.groupBox5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
@@ -87,6 +89,7 @@
             this.splitContainer1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nwDataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // button5
@@ -120,7 +123,7 @@
             this.label2.Location = new System.Drawing.Point(93, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 18);
+            this.label2.Size = new System.Drawing.Size(103, 17);
             this.label2.TabIndex = 52;
             this.label2.Text = "C# 1.0  / 2.0 ";
             // 
@@ -152,11 +155,11 @@
             // 
             this.listBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 18;
+            this.listBox2.ItemHeight = 17;
             this.listBox2.Location = new System.Drawing.Point(0, 0);
             this.listBox2.Margin = new System.Windows.Forms.Padding(5);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(276, 271);
+            this.listBox2.Size = new System.Drawing.Size(276, 337);
             this.listBox2.TabIndex = 54;
             // 
             // buttonX
@@ -203,6 +206,7 @@
             this.button45.TabIndex = 38;
             this.button45.Text = "Var (隱含型別區域變數)";
             this.button45.UseVisualStyleBackColor = false;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
             // 
             // button43
             // 
@@ -216,6 +220,7 @@
             this.button43.TabIndex = 40;
             this.button43.Text = "匿名型別 Anonymouse type";
             this.button43.UseVisualStyleBackColor = false;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
             // 
             // button41
             // 
@@ -229,6 +234,7 @@
             this.button41.TabIndex = 42;
             this.button41.Text = "物件初始化 (Object Initializer) / 集合初始化 ";
             this.button41.UseVisualStyleBackColor = false;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
             // 
             // button40
             // 
@@ -303,6 +309,7 @@
             this.button32.TabIndex = 20;
             this.button32.Text = "擴充方法";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // groupBox1
             // 
@@ -347,8 +354,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer4);
-            this.splitContainer2.Size = new System.Drawing.Size(276, 856);
-            this.splitContainer2.SplitterDistance = 456;
+            this.splitContainer2.Size = new System.Drawing.Size(276, 1058);
+            this.splitContainer2.SplitterDistance = 563;
             this.splitContainer2.SplitterWidth = 7;
             this.splitContainer2.TabIndex = 1;
             // 
@@ -367,8 +374,8 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.listBox2);
-            this.splitContainer3.Size = new System.Drawing.Size(276, 456);
-            this.splitContainer3.SplitterDistance = 178;
+            this.splitContainer3.Size = new System.Drawing.Size(276, 563);
+            this.splitContainer3.SplitterDistance = 219;
             this.splitContainer3.SplitterWidth = 7;
             this.splitContainer3.TabIndex = 0;
             // 
@@ -376,11 +383,11 @@
             // 
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
+            this.listBox1.ItemHeight = 17;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Margin = new System.Windows.Forms.Padding(5);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(276, 178);
+            this.listBox1.Size = new System.Drawing.Size(276, 219);
             this.listBox1.TabIndex = 47;
             // 
             // splitContainer4
@@ -398,8 +405,8 @@
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.dataGridView2);
-            this.splitContainer4.Size = new System.Drawing.Size(276, 393);
-            this.splitContainer4.SplitterDistance = 192;
+            this.splitContainer4.Size = new System.Drawing.Size(276, 488);
+            this.splitContainer4.SplitterDistance = 238;
             this.splitContainer4.SplitterWidth = 7;
             this.splitContainer4.TabIndex = 0;
             // 
@@ -412,7 +419,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(276, 192);
+            this.dataGridView1.Size = new System.Drawing.Size(276, 238);
             this.dataGridView1.TabIndex = 49;
             // 
             // dataGridView2
@@ -424,7 +431,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(276, 194);
+            this.dataGridView2.Size = new System.Drawing.Size(276, 243);
             this.dataGridView2.TabIndex = 50;
             // 
             // groupBox2
@@ -474,7 +481,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1569, 856);
+            this.splitContainer1.Size = new System.Drawing.Size(1569, 1058);
             this.splitContainer1.SplitterDistance = 1283;
             this.splitContainer1.SplitterWidth = 10;
             this.splitContainer1.TabIndex = 64;
@@ -486,7 +493,7 @@
             this.label4.Location = new System.Drawing.Point(86, 653);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(317, 18);
+            this.label4.Size = new System.Drawing.Size(300, 17);
             this.label4.TabIndex = 37;
             this.label4.Text = "C# 3.0 宣告風格的編碼程式 / 高層次的抽象";
             // 
@@ -530,6 +537,30 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Delegate (委派)";
             // 
+            // button10
+            // 
+            this.button10.AutoSize = true;
+            this.button10.Location = new System.Drawing.Point(803, 39);
+            this.button10.Margin = new System.Windows.Forms.Padding(5);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(159, 51);
+            this.button10.TabIndex = 53;
+            this.button10.Text = "MyWhere";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.AutoSize = true;
+            this.button9.Location = new System.Drawing.Point(614, 39);
+            this.button9.Margin = new System.Windows.Forms.Padding(5);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(159, 51);
+            this.button9.TabIndex = 52;
+            this.button9.Text = "Test(int)";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // button2
             // 
             this.button2.AutoSize = true;
@@ -553,35 +584,20 @@
             this.label1.Size = new System.Drawing.Size(1014, 18);
             this.label1.TabIndex = 46;
             // 
-            // button9
+            // nwDataSet11
             // 
-            this.button9.AutoSize = true;
-            this.button9.Location = new System.Drawing.Point(614, 39);
-            this.button9.Margin = new System.Windows.Forms.Padding(5);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(159, 51);
-            this.button9.TabIndex = 52;
-            this.button9.Text = "Test(int)";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.nwDataSet11.DataSetName = "NWDataSet1";
+            this.nwDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // button10
+            // productsTableAdapter1
             // 
-            this.button10.AutoSize = true;
-            this.button10.Location = new System.Drawing.Point(803, 39);
-            this.button10.Margin = new System.Windows.Forms.Padding(5);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(159, 51);
-            this.button10.TabIndex = 53;
-            this.button10.Text = "MyWhere";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.productsTableAdapter1.ClearBeforeFill = true;
             // 
             // FrmLangForLINQ
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1569, 856);
+            this.ClientSize = new System.Drawing.Size(1569, 1058);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -616,6 +632,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nwDataSet11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -658,5 +675,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private LinqLabs.NWDataSet1 nwDataSet11;
+        private LinqLabs.NWDataSet1TableAdapters.ProductsTableAdapter productsTableAdapter1;
     }
 }

@@ -38,6 +38,10 @@ namespace MyHomeWork
             this.lblMaster = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
@@ -62,10 +66,6 @@ namespace MyHomeWork
             this.productsTableAdapter1 = new LinqLabs.NWDataSet1TableAdapters.ProductsTableAdapter();
             this.tableAdapterManager1 = new LinqLabs.NWDataSet1TableAdapters.TableAdapterManager();
             this.nwDataSet11 = new LinqLabs.NWDataSet1();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
@@ -95,7 +95,7 @@ namespace MyHomeWork
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(880, 451);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(880, 430);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // lblDetails
@@ -120,7 +120,7 @@ namespace MyHomeWork
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(870, 401);
+            this.dataGridView2.Size = new System.Drawing.Size(870, 380);
             this.dataGridView2.TabIndex = 100;
             // 
             // splitContainer2
@@ -138,7 +138,7 @@ namespace MyHomeWork
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel2);
-            this.splitContainer2.Size = new System.Drawing.Size(1531, 455);
+            this.splitContainer2.Size = new System.Drawing.Size(1531, 434);
             this.splitContainer2.SplitterDistance = 642;
             this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
@@ -156,7 +156,7 @@ namespace MyHomeWork
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(638, 451);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(638, 430);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // lblMaster
@@ -181,7 +181,7 @@ namespace MyHomeWork
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(628, 401);
+            this.dataGridView1.Size = new System.Drawing.Size(628, 380);
             this.dataGridView1.TabIndex = 71;
             // 
             // splitContainer1
@@ -220,10 +220,62 @@ namespace MyHomeWork
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1531, 801);
-            this.splitContainer1.SplitterDistance = 341;
+            this.splitContainer1.Size = new System.Drawing.Size(1531, 764);
+            this.splitContainer1.SplitterDistance = 325;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 136;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button10.Location = new System.Drawing.Point(613, 242);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(175, 38);
+            this.button10.TabIndex = 153;
+            this.button10.Text = "數學不及格... 是誰";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button9.Location = new System.Drawing.Point(551, 288);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(375, 38);
+            this.button9.TabIndex = 152;
+            this.button9.Text = "找出除了 \'bbb\' 學員的學員的所有成績(\'bbb\' 退學)";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button8.Location = new System.Drawing.Point(430, 242);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(175, 38);
+            this.button8.TabIndex = 151;
+            this.button8.Text = "找出學員 \'bbb\' 的成績";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button7.Location = new System.Drawing.Point(125, 242);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(297, 38);
+            this.button7.TabIndex = 150;
+            this.button7.Text = "找出 Name \'aaa\',\'bbb\',\'ccc\' 的學成績";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button5
             // 
@@ -270,7 +322,7 @@ namespace MyHomeWork
             this.label3.Location = new System.Drawing.Point(812, 220);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(258, 17);
+            this.label3.Size = new System.Drawing.Size(250, 16);
             this.label3.TabIndex = 135;
             this.label3.Text = "LINQ to Northwind DataSet - Products";
             // 
@@ -282,7 +334,7 @@ namespace MyHomeWork
             this.label9.Location = new System.Drawing.Point(1216, 134);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 17);
+            this.label9.Size = new System.Drawing.Size(30, 16);
             this.label9.TabIndex = 134;
             this.label9.Text = "年:";
             // 
@@ -294,7 +346,7 @@ namespace MyHomeWork
             this.label4.Location = new System.Drawing.Point(57, 22);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 17);
+            this.label4.Size = new System.Drawing.Size(141, 16);
             this.label4.TabIndex = 103;
             this.label4.Text = "LINQ to FileInfo[]";
             // 
@@ -371,7 +423,7 @@ namespace MyHomeWork
             this.comboBox1.Location = new System.Drawing.Point(1268, 130);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(176, 25);
+            this.comboBox1.Size = new System.Drawing.Size(176, 23);
             this.comboBox1.TabIndex = 125;
             // 
             // btnClick
@@ -385,6 +437,7 @@ namespace MyHomeWork
             this.btnClick.TabIndex = 97;
             this.btnClick.Text = "上一頁";
             this.btnClick.UseVisualStyleBackColor = false;
+            this.btnClick.Click += new System.EventHandler(this.btnClick_Click);
             // 
             // button4
             // 
@@ -405,7 +458,7 @@ namespace MyHomeWork
             this.textBox1.Location = new System.Drawing.Point(919, 253);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 27);
+            this.textBox1.Size = new System.Drawing.Size(180, 26);
             this.textBox1.TabIndex = 98;
             this.textBox1.Text = "10";
             // 
@@ -417,7 +470,7 @@ namespace MyHomeWork
             this.label1.Location = new System.Drawing.Point(800, 257);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 17);
+            this.label1.Size = new System.Drawing.Size(76, 16);
             this.label1.TabIndex = 99;
             this.label1.Text = "一頁幾筆";
             // 
@@ -429,7 +482,7 @@ namespace MyHomeWork
             this.label5.Location = new System.Drawing.Point(803, 34);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(246, 17);
+            this.label5.Size = new System.Drawing.Size(238, 16);
             this.label5.TabIndex = 104;
             this.label5.Text = "LINQ to Northwind DataSet - Orders";
             // 
@@ -441,7 +494,7 @@ namespace MyHomeWork
             this.label2.Location = new System.Drawing.Point(574, 519);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 17);
+            this.label2.Size = new System.Drawing.Size(47, 16);
             this.label2.TabIndex = 135;
             this.label2.Text = "Year:";
             // 
@@ -474,63 +527,11 @@ namespace MyHomeWork
             this.nwDataSet11.DataSetName = "NWDataSet1";
             this.nwDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button7.Location = new System.Drawing.Point(125, 242);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(297, 38);
-            this.button7.TabIndex = 150;
-            this.button7.Text = "找出 Name \'aaa\',\'bbb\',\'ccc\' 的學成績";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button8.Location = new System.Drawing.Point(430, 242);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(175, 38);
-            this.button8.TabIndex = 151;
-            this.button8.Text = "找出學員 \'bbb\' 的成績";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button9.Location = new System.Drawing.Point(551, 288);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(375, 38);
-            this.button9.TabIndex = 152;
-            this.button9.Text = "找出除了 \'bbb\' 學員的學員的所有成績(\'bbb\' 退學)";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button10.Location = new System.Drawing.Point(613, 242);
-            this.button10.Margin = new System.Windows.Forms.Padding(4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(175, 38);
-            this.button10.TabIndex = 153;
-            this.button10.Text = "數學不及格... 是誰";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
             // Frm作業_1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1531, 801);
+            this.ClientSize = new System.Drawing.Size(1531, 764);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
