@@ -59,5 +59,10 @@ namespace Starter
             this.listBox1.Items.Add("Avg UnitPrice=" + this.nwDataSet11.Products.Average(p => p.UnitPrice));
             this.listBox1.Items.Add("Max UnitslnStock=" + this.nwDataSet11.Products.Max(p => p.UnitsInStock));
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
